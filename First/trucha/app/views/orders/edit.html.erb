@@ -1,0 +1,40 @@
+<h1>Editar orden</h1>
+<%=form_for @order do |f|%>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :dish_id,'Id del platillo'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :dish_id,placeholder: @order.dish_id%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :table_id,'Id de la mesa'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :table_id,placeholder: @order.table_id%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :total,'Total'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :total,placeholder: @order.total%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :is_payed,'Pagado?'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :is_payed,placeholder: @order.is_payed%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<%=f.submit%>
+		</div>
+	</div>
+<%end%>

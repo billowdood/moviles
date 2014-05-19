@@ -1,0 +1,16 @@
+<h1>Agregar mesa</h1>
+<%=form_for @table do |f|%>
+	<div class="row">
+		<div class="col-lg-2">
+			<%=f.label :number, 'Numero de mesa'%>
+		</div>
+		<div class="col-lg-1">
+			<%=f.text_field :number%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<%=f.submit%>
+		</div>
+	</div>
+<%end%>

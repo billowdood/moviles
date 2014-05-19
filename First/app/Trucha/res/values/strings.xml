@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trucha</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_save_host">Guardar</string>
+    <string name="button_add_dish">Add dish</string>
+    <string name="button_make_order">Make order</string>
+    <string name="edt_txt_host_hint">xxx.xxx.xxx.xxx</string>
+    <string name="edt_txt_table_hint">Table number</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="logo_description">Logo restaurante</string>
+    <string name="menu_button">Menu</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_dishes">Dishes</string>
+    <string name="title_activity_main">Inicio</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_show_dish">Dish</string>
+    <string name="txt_view_host">Dirección del servidor</string>
+    <string name="txt_view_table">Table number</string>
+    <string name="txt_view_n_a">N/A</string>
+    <string name="txt_view_description">Description</string>
+
+</resources>

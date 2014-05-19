@@ -1,0 +1,16 @@
+<h1>Platillos</h1>
+<%@dishes.each do |d|%>
+	<div class="row">
+		<div class="col-lg-3">
+			id: <%=d.id%>
+			Platillo: <%=d.name%>
+			Precio: <%=d.price%>
+		</div>
+		<div class="col-lg-1">
+			<%=link_to 'Eliminar',d,method: :delete%>
+		</div>
+		<div class="col-lg-1">
+			<%=link_to 'Cambiar',edit_dish_path(d.id)%>
+		</div>
+	</div>
+<%end%>

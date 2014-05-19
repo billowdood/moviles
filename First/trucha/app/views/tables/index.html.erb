@@ -1,0 +1,11 @@
+<h1>Mesas</h1>
+<%@tables.each do |t|%>
+	<div class="row">
+		<div class="col-lg-2">
+			Mesa numero <%=t.number%>
+		</div>
+		<div class="col-lg-2">
+			<%=link_to 'Borrar mesa', t,method: :delete%>
+		</div>
+	</div>
+<%end%>

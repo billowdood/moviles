@@ -1,0 +1,40 @@
+<h1>Agregar orden</h1>
+<%=form_for @order do |f|%>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :table_id,'Mesa'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :table_id%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :dish_id,'Platillo'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :dish_id%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :total,'Total'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :total%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :is_payed,'Pagado'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.select :is_payed,{si: true,no: false}%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<%=f.submit%>
+		</div>
+	</div>
+<%end%>

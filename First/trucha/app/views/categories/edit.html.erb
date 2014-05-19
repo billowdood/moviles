@@ -1,0 +1,14 @@
+<h1>Editar <%=@category.name%></h1>
+<%=form_for @category do |f|%>
+	<div class="row">
+		<div class="col-lg-2">
+			<%=f.label :name,'Nombre'%>
+			<%=f.text_field :name,placeholder: @category%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<%=f.submit%>
+		</div>
+	</div>
+<%end%>

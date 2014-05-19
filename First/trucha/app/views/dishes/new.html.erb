@@ -1,0 +1,32 @@
+<h1>Agregar platillo</h1>
+<%=form_for @dish do |f|%>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :name,'Nombre'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :name%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :price,'Precio'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :price%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-1">
+			<%=f.label :description,'Descripcion'%>
+		</div>
+		<div class="col-lg-2">
+			<%=f.text_field :description%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<%=f.submit%>
+		</div>
+	</div>
+<%end%>

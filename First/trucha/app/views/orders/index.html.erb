@@ -1,0 +1,23 @@
+<h1>Ordenes</h1>
+<%@orders.each do |o|%>
+	<div class="row">
+		<div class="col-lg-1">
+			id:<%=o.id%>
+		</div>
+		<div class="col-lg-1">
+			Mesa: <%=o.table_id%>
+		</div>
+		<div class="col-lg-1">
+		 	Platillo: <%=o.total%>
+		</div>
+		<div class="col-lg-2">
+			Pagado: <%=o.is_payed%>
+		</div>
+		<div class="col-lg-1">
+			<%=link_to 'Eliminar',o,method: :delete%>
+		</div>
+		<div class="col-lg-1">
+			<%=link_to 'Editar',edit_order_path(o.id)%>
+		</div>
+	</div>
+<%end%>
